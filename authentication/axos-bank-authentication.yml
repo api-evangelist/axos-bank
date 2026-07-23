@@ -1,0 +1,41 @@
+generated: '2026-07-23'
+method: searched
+source: https://www.axosbank.com/developer
+docs: https://www.axosbank.com/developer
+note: >-
+  Axos Bank's developer / Banking-as-a-Service program documents OAuth 2.0
+  token-based authentication for its four API product families (Account
+  Enrollment, Account Maintenance, Payment Solutions, Account Reporting).
+  Access is partner-gated: a developer contacts the Axos API team, who
+  provision sandbox/test credentials and later production credentials, and API
+  keys are issued through a per-user secure developer dashboard. No public
+  OpenAPI specification is published, so no machine-readable securityScheme
+  could be harvested; this profile is captured from the public developer-portal
+  documentation. Token, authorization, and scope endpoints are disclosed only
+  after onboarding.
+summary:
+  types:
+  - oauth2
+  - apiKey
+  api_key_in:
+  - dashboard-issued
+  oauth2_flows:
+  - clientCredentials
+  access_model: partner-gated (contact API team; sandbox then production credentials)
+  self_serve: false
+schemes:
+- name: OAuth2
+  type: oauth2
+  description: >-
+    OAuth 2.0 token-based authentication documented for the Axos API Store.
+    Flow details, authorization/token URLs, and scopes are provisioned to
+    onboarded partners and are not published publicly.
+  documented_flow: clientCredentials
+  source: https://www.axosbank.com/developer
+- name: DeveloperDashboardKey
+  type: apiKey
+  in: dashboard-issued
+  description: >-
+    API keys issued to each onboarded developer through a per-user secure
+    developer dashboard, used alongside OAuth 2.0 tokens.
+  source: https://www.axosbank.com/developer

@@ -90,6 +90,12 @@ apis:
   - type: APIReference
     url: https://www.axosbank.com/developer/api-catalog
 common:
+- type: DomainSecurity
+  url: security/axos-bank-domain-security.yml
+- type: Authentication
+  url: authentication/axos-bank-authentication.yml
+- type: LLMsTxt
+  url: llms/axos-bank-llms.txt
 - type: Website
   url: https://www.axosbank.com/
 - type: DeveloperPortal

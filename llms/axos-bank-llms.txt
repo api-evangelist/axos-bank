@@ -1,0 +1,34 @@
+# Axos Bank
+
+> Axos Bank is a digital bank offering a full range of financial products and services for personal, business, and commercial banking needs.
+
+## Pages
+
+## Personal Banking
+
+- [Axos Bank | Online Banking for Personal, Business, and Commercial Needs](https://www.axosbank.com/): Overview of Axos Bank's products and services, including checking, savings, loans, and banking solutions.
+- [Personal Banking](https://www.axosbank.com/personal): Overview of digital personal banking solutions, including checking, savings, lending and premier banking.
+- [Online Bank Accounts | Personal Checking & Savings](https://www.axosbank.com/personal/bank): Compare and open checking and savings accounts online with competitive interest rates and no monthly fees.
+- [Online Checking Accounts](https://www.axosbank.com/personal/bank/checking-accounts): Explore high-yield and rewards checking accounts with low fees, mobile access, and ATM reimbursements.
+- [Online Savings Accounts](https://www.axosbank.com/personal/bank/savings-accounts): Compare online savings accounts with high interest rates, no monthly fees, and 24/7 digital access.
+- [Axos ONE | High-Yield Savings and Checking Account Bundle](https://www.axosbank.com/personal/bank/axos-one): A bundled high-yield savings with a 4.21% APY* and checking account with premium benefits like early direct deposit and low fees.
+- [Summit Savings | High-Yield Online Savings](https://www.axosbank.com/personal/bank/savings-accounts/summit-savings): A high-yield online savings account with a 3.75% APY*, no fees, and no balance requirements.
+- [Personal Finance Insights](https://www.axosbank.com/personal/insights): Educational resources, articles, and tips on managing personal finances and maximizing your online banking experience.
+
+## Small Business Banking
+
+- [Small Business Banking](https://www.axosbank.com/business): Online banking solutions for small businesses, including checking, savings, merchant services, and treasury management.
+- [Business Checking Accounts](https://www.axosbank.com/business/business-checking-accounts): Compare flexible, low-fee checking accounts built for small businesses, LLCs, and startups.
+- [Business Savings](https://www.axosbank.com/business/savings): Overview of business savings options designed to grow your business reserves with competitive APYs.
+- [Business Savings Accounts](https://www.axosbank.com/business/savings/business-savings-accounts): Explore high-yield business savings options with no monthly fees and easy online access.
+- [Basic Business Checking](https://www.axosbank.com/business/business-checking-accounts/basic-business-checking): An online business checking account for small businesses with unlimited transactions, free incoming wires, no balance requirements, no initial deposit, and unlimited domestic ATM fee reimbursements.
+- [Business Premium Savings](https://www.axosbank.com/business/savings/business-savings-accounts/business-premium-savings): A high-yield business savings account with a 3.60% APY*, free incoming wires, no monthly fees, no minimum opening deposit, and no average daily balance requirement.
+- [Business Services](https://www.axosbank.com/business/services): Treasury management, merchant services, and other digital services to streamline business operations.
+- [Business Insights](https://www.axosbank.com/business/insights): Expert articles and guides for business owners on banking, growth, and financial management.
+
+## Commercial Banking
+
+- [Commercial Banking & Lending](https://www.axosbank.com/commercial): Explore our full suite of commercial banking and lending solutions tailored for large-scale clients.
+- [Commercial Banking](https://www.axosbank.com/commercial/banking): Enterprise-grade banking services including treasury, deposit, and specialty account solutions.
+- [Commercial Lending](https://www.axosbank.com/commercial/lending): Real estate loans, equipment financing, and other commercial lending options for institutional and corporate clients.
+- [Commercial Banking Insights](https://www.axosbank.com/commercial/insights): In-depth content covering commercial lending strategies, market trends, and enterprise financial planning.
