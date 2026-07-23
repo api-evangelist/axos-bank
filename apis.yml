@@ -1,0 +1,111 @@
+aid: axos-bank
+url: https://raw.githubusercontent.com/api-evangelist/axos-bank/refs/heads/main/apis.yml
+name: Axos Bank
+kind: company
+description: Axos Bank is a branchless, digital-first federal savings bank chartered
+  and regulated by the U.S. Office of the Comptroller of the Currency (OCC) and a member
+  of the FDIC. Founded in 2000 as Bank of Internet USA and rebranded Axos in 2018,
+  it is the primary banking subsidiary of Axos Financial, Inc. (NYSE AX), a Delaware
+  financial holding company headquartered in San Diego, California with roughly $29
+  billion in consolidated assets. Axos offers consumer and commercial deposit, lending,
+  and treasury-management products online, and runs a first-party developer / Banking-as-a-Service
+  program. That program is real but partner-gated - the public API Store documents
+  four API product families (Account Enrollment, Account Maintenance, Payment Solutions,
+  and Account Reporting) secured with OAuth 2.0, but access requires contacting the
+  Axos API team; there is no self-serve signup, no publicly downloadable OpenAPI/Swagger
+  specification, and no documented first-party FDX participation or published CFPB
+  Section 1033 data-access posture.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- Banking-as-a-Service
+- Open Finance
+- Payments
+- Digital Bank
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis:
+- aid: axos-bank:axos-account-enrollment-api
+  name: Axos Account Enrollment API
+  description: Submit new account applications and open new Axos deposit and commercial
+    accounts programmatically. Partner-gated access secured with OAuth 2.0; no public
+    OpenAPI specification is published.
+  humanURL: https://www.axosbank.com/developer/api-catalog
+  tags:
+  - Account Opening
+  - Enrollment
+  - Onboarding
+  properties:
+  - type: Documentation
+    url: https://www.axosbank.com/developer
+  - type: APIReference
+    url: https://www.axosbank.com/developer/api-catalog
+- aid: axos-bank:axos-account-maintenance-api
+  name: Axos Account Maintenance API
+  description: Keep client funds current - check balances, manage stop payments, update
+    account information, close accounts, and move funds between deposit and commercial
+    accounts. Partner-gated access secured with OAuth 2.0; no public OpenAPI specification
+    is published.
+  humanURL: https://www.axosbank.com/developer/api-catalog
+  tags:
+  - Accounts
+  - Balances
+  - Stop Payments
+  properties:
+  - type: Documentation
+    url: https://www.axosbank.com/developer
+  - type: APIReference
+    url: https://www.axosbank.com/developer/api-catalog
+- aid: axos-bank:axos-payment-solutions-api
+  name: Axos Payment Solutions API
+  description: Enable fund transfers between Axos accounts and track payment status,
+    including domestic wire origination. Partner-gated access secured with OAuth 2.0;
+    no public OpenAPI specification is published.
+  humanURL: https://www.axosbank.com/developer/api-catalog
+  tags:
+  - Payments
+  - Transfers
+  - Wires
+  properties:
+  - type: Documentation
+    url: https://www.axosbank.com/developer
+  - type: APIReference
+    url: https://www.axosbank.com/developer/api-catalog
+- aid: axos-bank:axos-account-reporting-api
+  name: Axos Account Reporting API
+  description: Access transaction reports, query company data, and identify client
+    accounts for data-driven reporting. Partner-gated access secured with OAuth 2.0;
+    no public OpenAPI specification is published.
+  humanURL: https://www.axosbank.com/developer/api-catalog
+  tags:
+  - Reporting
+  - Transactions
+  - Data
+  properties:
+  - type: Documentation
+    url: https://www.axosbank.com/developer
+  - type: APIReference
+    url: https://www.axosbank.com/developer/api-catalog
+common:
+- type: Website
+  url: https://www.axosbank.com/
+- type: DeveloperPortal
+  url: https://www.axosbank.com/developer
+- type: Documentation
+  url: https://www.axosbank.com/developer/api-catalog
+- type: Support
+  url: https://www.axosbank.com/developer/contact
+- type: LinkedIn
+  url: https://www.linkedin.com/company/axosbank
+- type: PrivacyPolicy
+  url: https://www.axosbank.com/legal/privacy
+- type: TermsOfService
+  url: https://www.axosbank.com/legal
+- type: SecurityCenter
+  url: https://www.axosbank.com/legal/security-center
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

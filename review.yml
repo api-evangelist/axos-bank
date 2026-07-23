@@ -1,0 +1,98 @@
+aid: axos-bank
+name: Axos Bank
+review:
+  question: Does Axos Bank publish a public, self-serve first-party developer API with a downloadable OpenAPI/Swagger specification, and is it a documented FDX participant or does it state a CFPB Section 1033 posture?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Axos Bank runs a genuine first-party developer / Banking-as-a-Service
+    program - the "API Store" - but it is partner-gated, not self-serve, and
+    exposes no publicly downloadable machine-readable specification. The public
+    API catalog documents four API product families in prose (Account
+    Enrollment, Account Maintenance, Payment Solutions, and Account Reporting).
+    Getting access requires submitting a contact form to the Axos API team,
+    who then provision sandbox/test credentials and later production
+    credentials. Authentication is OAuth 2.0 token-based, with API keys issued
+    through a per-user secure developer dashboard. No first-party FDX
+    (Financial Data Exchange) participation is documented, and no CFPB Section
+    1033 personal-financial-data-rights posture is published. Consumer-
+    permissioned data sharing, where present, is understood to occur through
+    third-party aggregators rather than a documented first-party open-banking
+    data-access API. No OpenAPI/Swagger, no GraphQL, no AsyncAPI/WebSocket, and
+    no public SDK repository were found; therefore none were harvested.
+  institution:
+    charterType: Federal savings bank (national thrift charter)
+    primaryRegulator: U.S. Office of the Comptroller of the Currency (OCC)
+    depositInsurance: FDIC member
+    holdingCompany: Axos Financial, Inc. (NYSE AX), a Delaware financial holding company regulated by the Federal Reserve
+    headquarters: San Diego, California, USA
+    founded: 2000 (as Bank of Internet USA; rebranded Axos in 2018)
+    approxConsolidatedAssets: ~$29 billion (holding company, 2026)
+  apiPosture:
+    firstPartyDeveloperPortal: true
+    developerPortalCanonicalURL: https://www.axosbank.com/developer
+    developerPortalSubdomain: https://developer.axosbank.com/
+    developerPortalSubdomainStatus: 522 (Cloudflare origin timeout at review time)
+    selfServeSignup: false
+    accessModel: Partner / contact-gated (contact API team, then sandbox then production credentials)
+    authModel: OAuth 2.0 token authentication; API keys via per-user developer dashboard
+    downloadableOpenAPI: false
+    downloadableSwagger: false
+    publicSDKs: false
+    fdxParticipant: false
+    section1033Posture: none published
+    aggregatorAccess: Consumer data sharing understood to run via third-party aggregators, not a documented first-party API
+    specProvenance: none - no machine-readable API specification is publicly available; nothing harvested
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: true
+      note: API catalog describes RESTful banking APIs (account enrollment, maintenance, payments, reporting). No base URL is published publicly; endpoint detail is provided only after onboarding.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket/streaming surface is documented.
+  probedURLs:
+    - url: https://www.axosbank.com/developer
+      status: 200
+      note: Live canonical developer portal / API Store.
+    - url: https://www.axosbank.com/developer/api-catalog
+      status: 200
+      note: Public API catalog listing four API product families.
+    - url: https://www.axosbank.com/developer/contact
+      status: 200
+      note: API team contact form; confirms access is contact-gated, not self-serve.
+    - url: https://developer.axosbank.com/
+      status: 522
+      note: Dedicated developer subdomain returned a Cloudflare origin timeout at review time.
+    - url: https://developer.axosbank.com/openapi.json
+      status: 522
+      note: No reachable machine-readable spec.
+    - url: https://www.axosbank.com/developer/openapi
+      status: 404
+      note: No downloadable spec at the www mirror.
+sources:
+  - url: https://www.axosbank.com/developer
+    type: DeveloperPortal
+    note: API Store overview; OAuth 2.0 auth, contact-gated onboarding, evolving API collection.
+  - url: https://www.axosbank.com/developer/api-catalog
+    type: APIReference
+    note: Four API product families - Account Enrollment, Account Maintenance, Payment Solutions, Account Reporting.
+  - url: https://www.axosbank.com/developer/contact
+    type: Support
+    note: Contact form confirming partner-gated access; a representative from the API team follows up.
+  - url: https://www.axosbank.com/about-us
+    type: Documentation
+    note: Company background - digital bank since 2000.
+  - url: https://en.wikipedia.org/wiki/Axos_Financial
+    type: Reference
+    note: Corporate structure, charter, NYSE listing (AX), rebrand history.
+actions:
+  openapiHarvested: false
+  reason: |
+    No public OpenAPI/Swagger/GraphQL/AsyncAPI specification exists to harvest.
+    The developer program is partner-gated with documentation released only
+    after onboarding. This is an honest first-party-portal-present, no-public-
+    spec, no-documented-FDX/1033 result.
